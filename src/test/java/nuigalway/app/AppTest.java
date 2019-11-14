@@ -69,6 +69,8 @@ public class AppTest
 
         //Assertions
         assertEquals("Programme is incorrect", "Computer Science",p1.getCourseName());
+        assertEquals("Student Username is incorrect", "Joe 18", p1.getModules().get(0).getListStudent().get(0).getUsername());
+        assertEquals("Student Username is incorrect", "Mama 20", p1.getModules().get(0).getListStudent().get(1).getUsername());
         assertNotNull("Modules null", p1.getModules());
         assertNotNull("Students null", p1.getStudents());
         assertNotNull("Start date is null", p1.getStartDate());
